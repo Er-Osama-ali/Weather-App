@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:400px ;
+    height: min-content;
+    background:linear-gradient(135deg, #00feba,#5b548a);
+    border-radius: 12px;
+    padding: 28px;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box input{
+    width: 70%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color:white;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 14px;
+    
+}
+.search-box input::placeholder{
+    color: black;
+}
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.search-box button:hover{
+    color:wheat;
+    background-color: rgb(92, 86, 86);
+}
+.weather-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weather-body img{
+    width: 60%;
+}
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+    color: white;
+}
+.weather-box .temperature sup{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    color: white;
+}
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.humidity,.wind{
+    display: flex;
+    text-align: center;
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.weather-details i{
+    font-size: 34px;
+}
+.weather-details .text{
+    margin-left: 12px;
+
+}
+.text span{
+    font-size: 25px;
+    font-weight: 700;
+}
+.location_not_found{
+    margin-top: 20px;
+   display: flex;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.location_not_found h1{
+    font-size: 25px;
+    color: white;
+    margin-block-end: 15px;
+}
+.location_not_found img{
+    width: 60%;
+}
